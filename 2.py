@@ -33,6 +33,8 @@ def checkReport(report):
 safeCount = 0
 
 for report in reports:
+    #safeCount += checkReport(report)
+
     copyReport = report[:]
     if checkReport(report) == 0:
         print(report)
@@ -46,6 +48,5 @@ for report in reports:
         print("-----\n")
     else:
         safeCount += 1
-
 
 print(safeCount)
